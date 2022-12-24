@@ -47,8 +47,6 @@ with open('input11.txt', 'r') as f:
 for i in range(0, 20):
     for id in monkeys.keys():
         monkeys.get(id).do_monkey_things()
-    if i % 1000 == 0:
-        print('done with round:', i)
 
 monkey_list = [monkeys[id] for id in monkeys.keys()]
 monkey_list.sort(key=lambda x: x.item_count, reverse=True)
